@@ -75,6 +75,8 @@ sudo systemctl restart apache2
 ```bash
 sudo chown -R www-data:www-data /var/www/html/carmanager-back
 sudo chmod -R 755 storage bootstrap/cache
+sudo usermod -a -G www-data $USER ##cuidado com essa
+
 ```
 
 ### **4.2 Firewall (UFW)**
